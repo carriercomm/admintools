@@ -1,8 +1,10 @@
 #!/usr/bin/env perl
 
-# os: freebsd
+# os: bsd
 # version: 1.0
 # purpose: returns all interface IP{v4,v6} addresses and associated PTR records
+# requires: awk
+#           host
 
 
 #ifconfig | awk '$1 ~ /inet[0-9]*/ && $2 !~ /fe80::1%lo0|::1|127.0.0.1/ {print $2};' | xargs -n 1 host | awk '$5 ~ /.*[.]$/ {print $5}'

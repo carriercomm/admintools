@@ -3,7 +3,8 @@
 # os: linux
 # version: 1.0
 # purpose: adds a specified IP to a specified chain with a DROP target
-# requires: iptables chain $chain to exist
+# requires: iptables (+chain $chain)
+#           awk
 
 # chain to use for blacklist, ex: INPUT/FORWARD/spammers
 my $chain = "blacklist";
