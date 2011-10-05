@@ -2,7 +2,7 @@
 
 # os: bsd
 # version: 1.0
-# purpose: extracts tgz
+# purpose: extracts tgz to ~/[selection] using @arg0 in case
 # requires: tar
 
 selection="[bnc|psybnc|eggdrop|emech|ezbounce]";
